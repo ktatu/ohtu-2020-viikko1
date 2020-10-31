@@ -153,7 +153,8 @@ public class VarastoTest {
         // Ja ylimenevä osa menee hukkaan
         Varasto var = new Varasto(10, 20);
         
-        assertEquals(10, var.getSaldo(), vertailuTarkkuus);
+        // RIKOTTU GITHUB ACTIONS-KOKEILUA VARTEN--------------------
+        assertEquals(5, var.getSaldo(), vertailuTarkkuus);
     }
     
     @Test
