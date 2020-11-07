@@ -21,10 +21,13 @@ public class Varasto {
 
         if (alkuSaldo < 0) {
             this.saldo = 0;
-        } else if (this.saldo > this.tilavuus) {
+        } else if (alkuSaldo > this.tilavuus) {
+            System.out.println("täällä1");
             this.saldo = this.tilavuus;
+        } else {
+            this.saldo = alkuSaldo;
+            System.out.println("täällä2");
         }
-        this.saldo = alkuSaldo;
     }
 
     // --- ottavat aksessorit eli getterit: ---
